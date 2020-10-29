@@ -108,3 +108,21 @@ function describirLibro(obj){
     }
 }
 console.log(describirLibro(libro1).versionLarga);
+
+const restaurante1 ={
+    'nombre': 'El celler de can Roca',
+    'capacidad': 100,
+    'ocupacion':75,
+    entrar(visitantes){
+        this.ocupacion = this.ocupacion + visitantes
+    },
+    salir(visitantes){
+        this.ocupacion = this.ocupacion - visitantes
+    }
+}
+restaurante1.entrar(10)
+console.log(restaurante1);
+restaurante1.salir(2)
+
+
+console.log(restaurante1);
