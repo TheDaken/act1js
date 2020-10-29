@@ -103,8 +103,8 @@ function describirLibro(obj){
 
     return {      
         versionCorta: `${obj.titulo} de ${obj.autor}`,
-        versionLarga: `${obj.titulo} de ${obj.autor} tiene ${obj.paginas} páginas y vale ${obj.precio}`
+        versionLarga: `${obj.titulo} de ${obj.autor} tiene ${obj.paginas} páginas y vale ${obj.precio}€`
 
     }
 }
-console.log(describirLibro(libro1));
+console.log(describirLibro(libro1).versionLarga);
